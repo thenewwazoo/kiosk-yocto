@@ -1,6 +1,6 @@
 
 FROM phusion/baseimage
-MAINTAINER Brandon Matthews <bmatt@luciddg.com>
+MAINTAINER Brandon Matthews <bmatt@optimaltour.us>
 
 # Pro-forma phusion/baseimage support
 ENV HOME /root
@@ -18,10 +18,10 @@ RUN useradd -d /usr/local/src/yocto --create-home yocto
 WORKDIR /usr/local/src/yocto/
 
 RUN git clone -b dizzy          http://git.yoctoproject.org/git/poky
-RUN git clone -b read-only-root https://github.com/luciddg/meta-web-kiosk
+RUN git clone -b read-only-root https://github.com/thenewwazoo/meta-web-kiosk
 RUN git clone -b dizzy          http://git.yoctoproject.org/git/meta-fsl-arm
 RUN git clone -b dizzy          https://github.com/Freescale/meta-fsl-arm-extra
-RUN git clone                   https://github.com/luciddg/meta-luciddg-kiosk.git
+RUN git clone                   https://github.com/thenewwazoo/meta-luciddg-kiosk.git
 
 # Copy relevant OE environemtn configuration files
 ADD build/ /usr/local/src/yocto/build/
