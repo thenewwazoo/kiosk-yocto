@@ -21,7 +21,7 @@ If you've built an image, and you want to copy it somewhere to write it to SD ca
 If you want to change some aspect of the files that are included by default in the SD card image:
 * `recipes-bsp/u-boot/u-boot-cubox-i/wifi.conf`
 * `recipes-bsp/u-boot/u-boot-cubox-i/browser.conf`
-These files live in the [meta-luciddg-kiosk project](https://github.com/luciddg/meta-luciddg-kiosk).
+These files live in the [meta-luciddg-kiosk project](https://github.com/thenewwazoo/meta-luciddg-kiosk).
 
 If you want to change either configuration file _after_ you've written the image to an SD card:
 * `(boot partition)/wifi.conf`
@@ -32,7 +32,7 @@ If you want to change either configuration file _after_ you've written the image
 
 The microSD card has two partitions: a FAT (read: Windows) partition, and a Linux partition.
 
-You can use any text editor to edit either configuration file. Save your work, eject the SD card, and you're ready to go. See the [meta-luciddg-kiosk project](https://github.com/luciddg/meta-luciddg-kiosk) for information about the contents of these files, and what to put in them.
+You can use any text editor to edit either configuration file. Save your work, eject the SD card, and you're ready to go. See the [meta-luciddg-kiosk project](https://github.com/thenewwazoo/meta-luciddg-kiosk) for information about the contents of these files, and what to put in them.
 
 ## Changing the default `browser.conf` and `wifi.conf` files
 
